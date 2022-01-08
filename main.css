@@ -1,0 +1,62 @@
+head, body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+span {
+    font-size: 300px;
+    margin-right: 50px;
+    color: rgb(140, 140, 140);
+}
+
+div.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#scale {
+    transform: scale(20.0);
+}
+
+svg {
+    width: 320px;
+    height: 300px;
+}
+
+svg path {
+    fill: skyblue;
+    animation: changeColour 5s;
+}
+
+@keyframes changeColour {
+    0% {
+        fill: rgb(140, 140, 140);
+    }
+
+    30% {
+        fill: skyblue;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    span {
+        font-size: 4rem;
+        margin-right: 1rem;
+        color: rgb(140, 140, 140);
+    }
+    
+    svg {
+        width: 80px;
+        height: 80px;
+    }
+    
+    #scale {
+        transform: scale(5.0);
+    }
+}
